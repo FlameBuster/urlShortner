@@ -16,6 +16,11 @@
   ],
   "routes": [
     {
+      "src":"/static/(.*)",
+      "dest":"/static/$1"
+    },
+
+    {
       "src": "/(.*)",
       "dest": "urlShortner/wsgi.py"
     }
