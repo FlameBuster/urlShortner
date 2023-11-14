@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/TechNotebookYT/Tutorial-Files/master/favicon.ico" type="image/x-icon">
+    <title>URLShort - Award-Winning Design</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f9fa;
+            color: #495057;
+        }
+
+        #page-container {
+            position: relative;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+            padding-bottom: 4rem;
+        }
+
+        #hero {
+            background: linear-gradient(to right, #36D1DC, #5B86E5);
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .hero-content p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+
+        .btn-primary, .btn-dark {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.5em;
+            border-radius: 5px;
+            margin-right: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover, .btn-dark:hover {
+            background-color: #45a049;
+        }
+
+        #footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: #343a40;
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        #footer a {
+            color: #ffc107;
+        }
+
+        #footer h5, #footer h6 {
+            margin: 0;
+        }
+        
+        #id_original_url {
+        width: 100%;
+        padding: 12px;
+        font-size: 1em;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 12px;
+        transition: border-color 0.3s;
+    }
+
+        #id_original_url:focus {
+        border-color: #4CAF50;
+        outline: none;
+    } 
+        #id_original_url {
+        display: block;
+        font-size: 1.2em;
+        margin-bottom: 8px;
+        color: #333;
+    }
+        
+    </style>
+</head>
+<body>
+    <div id="page-container">
+        <div id="hero">
+            <div class="hero-content">
+                <h1>URLShort - Your Link, Our Innovation</h1>
+                <p>Shorten URLs with ease and precision. Experience the power of simplicity.</p>
+                <a href="/"><button type="button" class="btn btn-primary">Explore</button></a>
+                <a href="/create/"><button type="button" class="btn btn-dark">Create URL</button></a>
+            </div>
+        </div>
+        {% block content %}
+
+        {% endblock content %}
+        <footer id="footer">
+            <h5>Thanks For Choosing URLShort by BusterWorks</a></h5>
+            <h6>&copy; BusterWorks 2023</h6>
+        </footer>
+    </div>
+</body>
+</html>
