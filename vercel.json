@@ -1,4 +1,5 @@
 {
+  "version":2,
   "builds": [
     {
       "src": "urlShortner/wsgi.py",
@@ -8,7 +9,7 @@
     {
       "src":"build.sh",
       "use":"@vercel/static-build",
-      "config":{
+      "config": {
         "distDir":"staticfiles_build"
       }
     }
